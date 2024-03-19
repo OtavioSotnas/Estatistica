@@ -11,6 +11,7 @@
 
 D A variável idade pode ser classificada de três formas distintas:
 > 1. <b>QUANTITATIVA DISCRETA</b> - podem ser ordenadas ou hierarquizardas.
+>    
 > Ex: Grau de escolaridade
 > 3. <b>QUALITATIVA NOMINAIS</b> - não podem ser ordenadas ou hierarquizardas.
 > 4. <b>QUANTITATIVA CONTÍNUA</b> - representam uma contagem de um conjunto finito.
