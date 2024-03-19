@@ -4,7 +4,7 @@
 
 ``QUALITATIVA NOMINAIS`` - Atrivbutos sem nenhum tipo de ordem.
 ```
-Sexo, Estado civil, País de origem, Ser fumante ou não.
+Exemplo: Sexo, Estado civil, País de origem, Ser fumante ou não.
 ```
 
 ``QUANTITATIVA ORDINAL`` - Atributos com algum tipo de ordem ou grau:
