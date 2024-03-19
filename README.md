@@ -2,23 +2,23 @@
 
 ## 1 TIPOS DE DADOS
 ```
-QUANTITATIVA ORDINAL: Podem ser ordenadas ou hierarquizardas.
+QUALITATIVA NOMINAIS: Atrivbutos sem nenhum tipo de ordem.
 
-- Ex: Grau de escolaridade e Faixas de idade
+- Ex: Sexo, Estado civil, País de origem, Ser fumante ou não, etc ...
+
+
+QUANTITATIVA ORDINAL: Atributos com algum tipo de ordem ou grau:
+
+- Ex: Escolaridade, Classe social, Status de pedido, etc...
+
+
+QUANTITATIVA DISCRETA: Valores númericos inteiros.
+
+- Ex: Idade em anos inteiros, Número de filhos, Quantidade de vendas, etc ...
 
   
-QUALITATIVA NOMINAIS: Não podem ser ordenadas ou hierarquizardas.
+QUALITATIVA CONTÍNUA: Valores numéricos racionais.
 
-- Ex: Estados, Sexo e Cores
-
-  
-QUANTITATIVA DISCRETA: Representam uma contagem de um conjunto finito.
-
-- Ex: Anos completos, Nº de filhos e Qtd carros vendidos
-
-  
-QUALITATIVA CONTÍNUA: Asumem valores em uma escala contínua.
-
-- Ex: Idade exata com meses e dias, Altura, Peso e Tempo
+- Ex: Salário, Preço, Temperatura, etc ...
 ```
 ## 2 DISTRIBUIÇÃO DE FREQUÊNCIAS
