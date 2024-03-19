@@ -23,7 +23,7 @@ Exemplo: Salário, Preço, Temperatura.
 ```  
 ## 2 DISTRIBUIÇÃO DE FREQUÊNCIAS
 
-### 2.1 PARA VARIÁVEIS QUALITATIVAS
+### 2.1 Para Variáveis Qualitativas
 
 ``Método com CrossTab``
 ```python
