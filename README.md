@@ -3,9 +3,9 @@
 ## 1 TIPOS DE DADOS
 
 ``QUALITATIVA NOMINAIS`` - Atrivbutos sem nenhum tipo de ordem.
-
+```
 - Ex: Sexo, Estado civil, País de origem, Ser fumante ou não, etc ...
-
+```
 
 ``QUANTITATIVA ORDINAL`` - Atributos com algum tipo de ordem ou grau:
 
