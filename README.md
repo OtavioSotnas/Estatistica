@@ -21,4 +21,4 @@ QUALITATIVA CONTÍNUA: Asumem valores em uma escala contínua.
 
 - Ex: Idade exata com meses e dias, Altura, Peso e Tempo
 ```
-
+## DISTRIBUIÇÃO DE FREQUÊNCIAS
