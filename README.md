@@ -25,14 +25,15 @@ QUALITATIVA CONTÍNUA: Valores numéricos racionais.
 
 ### 2.1 PARA VARIÁVEIS QUALITATIVAS
 
-- Método com CrossTab
-```markdown
+pd.crosstab(index, columns, values=None, rownames=None, colnames=None, 
+aggfunc=None, margins=False, margins_name='All', dropna=True, normalize=False)
+
 ```python
 tabela_cruzada = pd.crosstab(dados['Sexo'], dados['Cor'])
-
+```
 | Cor/Sexo | 0    | 2     | 4    | 6   | 8     |
 |----------|------|-------|------|-----|-------|
 | 0        | 256  | 22194 | 5502 | 235 | 25063 |
 | 1        | 101  | 9621  | 2889 | 117 | 10862 |
-```
+
 
