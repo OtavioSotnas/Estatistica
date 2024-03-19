@@ -25,9 +25,7 @@ QUALITATIVA CONTÍNUA: Valores numéricos racionais.
 
 ### 2.1 PARA VARIÁVEIS QUALITATIVAS
 
-pd.crosstab(index, columns, values=None, rownames=None, colnames=None, 
-aggfunc=None, margins=False, margins_name='All', dropna=True, normalize=False)
-
+``Método com CrossTab``
 ```python
 tabela_cruzada = pd.crosstab(dados['Sexo'], dados['Cor'])
 ```
@@ -36,4 +34,14 @@ tabela_cruzada = pd.crosstab(dados['Sexo'], dados['Cor'])
 | 0        | 256  | 22194 | 5502 | 235 | 25063 |
 | 1        | 101  | 9621  | 2889 | 117 | 10862 |
 
+Podemos renomear as colunas atráves de um dict
+```python
+cor = {0:'Indígena', 2:'Branca',4:'Preta',6:'Amarela',8:'Parda', 9:'Sem declaração'}
+sexo = {0:'Masculino', 1:'Feminino'}
 
+tabela_cruzada.rename(index=sexo, columns=cor, inplace=True)
+```
+| Cor/Sexo | Indígena | Branca | Preta | Amarela | Parda |
+|----------|------|-------|------|-----|-------|
+| Masculino | 256  | 22194 | 5502 | 235 | 25063 |
+| Feminino | 101  | 9621  | 2889 | 117 | 10862 |
