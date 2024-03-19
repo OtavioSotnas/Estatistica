@@ -10,7 +10,7 @@
 | Quantitativas Contínuas | Asumem valores em uma escala contínua | Altura, Peso e Tempo |
 
 A variável idade pode ser classificada de três formas distintas:
-        - QUANTITATIVA DISCRETA</b> - quando representa anos completos (números inteiros);
+>         - QUANTITATIVA DISCRETA</b> - quando representa anos completos (números inteiros);
         - QUANTITATIVA CONTÍNUA</b> - quando representa a idade exata, sendo representado por frações de anos; e
         - QUALITATIVA ORDINAL</b> - quando representa faixas de idade.
 
