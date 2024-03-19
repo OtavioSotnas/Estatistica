@@ -4,23 +4,23 @@
 
 ``QUALITATIVA NOMINAIS`` - Atrivbutos sem nenhum tipo de ordem.
 ```
-- Ex: Sexo, Estado civil, País de origem, Ser fumante ou não, etc ...
+Exemplo: Sexo, Estado civil, País de origem, Ser fumante ou não, etc ...
 ```
 
 ``QUANTITATIVA ORDINAL`` - Atributos com algum tipo de ordem ou grau:
-
-- Ex: Escolaridade, Classe social, Status de pedido, etc...
-
+```
+Exemplo: Escolaridade, Classe social, Status de pedido, etc...
+```
 
 ``QUANTITATIVA DISCRETA`` - Valores númericos inteiros.
-
-- Ex: Idade em anos inteiros, Número de filhos, Quantidade de vendas, etc ...
-
+```
+Exemplo: Idade em anos inteiros, Número de filhos, Quantidade de vendas, etc ...
+```
   
 ``QUALITATIVA CONTÍNUA`` - Valores numéricos racionais.
-
-- Ex: Salário, Preço, Temperatura, etc ...
-  
+```
+Exemplo: Salário, Preço, Temperatura, etc ...
+```  
 ## 2 DISTRIBUIÇÃO DE FREQUÊNCIAS
 
 ### 2.1 PARA VARIÁVEIS QUALITATIVAS
