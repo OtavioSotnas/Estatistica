@@ -34,7 +34,7 @@ tabela_cruzada = pd.crosstab(dados['Sexo'], dados['Cor'])
 | 0        | 256  | 22194 | 5502 | 235 | 25063 |
 | 1        | 101  | 9621  | 2889 | 117 | 10862 |
 
-Podemos renomear as colunas atráves de um dict e transformar em % com Normalize
+- Podemos renomear as colunas atráves de um dict e transformar em % com Normalize
 ```python
 cor = {0:'Indígena', 2:'Branca',4:'Preta',6:'Amarela',8:'Parda', 9:'Sem declaração'}
 sexo = {0:'Masculino', 1:'Feminino'}
