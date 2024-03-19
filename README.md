@@ -29,7 +29,7 @@ QUALITATIVA CONTÍNUA: Valores numéricos racionais.
 ```python
 tabela_cruzada = pd.crosstab(dados['Sexo'], dados['Cor'])
 ```
-Output:
+- Output:
 
 | Cor/Sexo | 0    | 2     | 4    | 6   | 8     |
 |----------|------|-------|------|-----|-------|
