@@ -50,11 +50,9 @@ porcentagem_cruzada.rename(index=sexo, columns=cor, inplace=True)
 ### 2.1 Para Variáveis Quantitativas
 
 - ``pandas.cut()``
-
-- Primeiro devemos descobrir o mim e o max.
 ```python
+# Primeiro devemos descobrir o mim e o max
 print('A menor renda que temos é de %s e a maior é %s reais.' % (dados.Renda.min(), dados.Renda.max()))
 ``` 
-```
 A menor renda que temos é de 0 e a maior é 200_000 reais.
-```
+
