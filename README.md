@@ -1,5 +1,5 @@
 > ### UF
-> ***
+> **
 
 ``QUALITATIVA NOMINAIS`` - Atrivbutos sem nenhum tipo de ordem.
 ```
