@@ -58,7 +58,6 @@ A menor renda que temos é de 0 e a maior é 200_000 reais.
 
 ```python
 # Depois criamos uma lista com as faixas de valores incluindo o min e o max
-# Neste caso são graus de renda por salário mínimo
 classes = [0, 1_576, 3_152, 7_880, 15_760, 200_000] 
 labels = ['E','D','C','B','A']
 ```
