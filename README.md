@@ -85,7 +85,7 @@ tabela_frequencia.sort_index(ascending=False)
 
 ### 2.3 QUANTITATIVAS (classes de amplitude fixa)
 ``Regra de Sturges``
-# $$k = 1 + \frac {10}{3}\log_{10}n$$
+![image](https://github.com/OtavioSotnas/Estatistica/assets/142911747/b9c46532-26f2-4ae9-ac3e-4d507eebaa96)
 **Caso não definirmos as faixas, podemos utilizar a fórmula de Sturges**
 ```python
 import numpy as np
