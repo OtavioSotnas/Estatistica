@@ -19,7 +19,7 @@ Exemplo: Idade em anos inteiros, Número de filhos, Quantidade de vendas.
 ```
 Exemplo: Salário, Preço, Temperatura.
 ```
-
+<br>
 ---
 
 ## 2 DISTRIBUIÇÃO DE FREQUÊNCIAS
@@ -50,6 +50,7 @@ porcentagem_cruzada.rename(index=sexo, columns=cor, inplace=True)
 | Feminino  | 0.13     | 12.52   | 3.76 | 0.15    | 14.14 |
 
 <br>
+---
 
 ### 2.2 QUANTITATIVAS (classes personalizadas)
 
@@ -80,10 +81,10 @@ tabela_frequencia.sort_index(ascending=False)
 | C     | 7599       | 9.89            |
 | D     | 16700      | 21.73           |
 | E     | 49755      | 64.75           |
-
+<br>
 ---
 
-### 2.2 QUANTITATIVAS (classes de amplitude fixa)
+### 2.3 QUANTITATIVAS (classes de amplitude fixa)
 ``Regra de Sturges``
 # $$k = 1 + \frac {10}{3}\log_{10}n$$
 **Caso não definirmos as faixas, podemos utilizar a fórmula de Sturges**
@@ -123,3 +124,4 @@ pd.DataFrame({'Frequencia': frequencia, 'Porcentagem (%)': round(percentual,2)})
 | (188888.889, 200000.0]  |     3      |       0.00      |
 
 Nota-se que essa distribuição esta estranha devido aos outliers
+---
