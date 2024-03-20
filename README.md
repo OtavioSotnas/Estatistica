@@ -53,8 +53,8 @@ porcentagem_cruzada.rename(index=sexo, columns=cor, inplace=True)
 ```python
 # Primeiro devemos descobrir o mim e o max
 print('A menor renda é de %s e a maior é %s reais.' % (dados.Renda.min(), dados.Renda.max()))
-``` 
-A menor renda que temos é de 0 e a maior é 200_000 reais.
+# A menor renda que temos é de 0 e a maior é 200_000 reais.
+```
 
 ```python
 # Depois criamos uma lista com as faixas de valores incluindo o min e o max
