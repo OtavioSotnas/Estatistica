@@ -46,3 +46,15 @@ porcentagem_cruzada.rename(index=sexo, columns=cor, inplace=True)
 |----------|------|-------|------|-----|-------|
 | Masculino | 0.33  | 28.88 | 7.16 | 0.31 | 32.62 |
 | Feminino | 0.13  | 12.52  | 3.76 | 0.15 | 14.14 |
+
+### 2.1 Para Variáveis Quantitativas
+
+- ``pandas.cut()``
+
+- Primeiro devemos descobrir o mim e o max.
+```python
+print('A menor renda que temos é de %s e a maior é %s reais.' % (dados.Renda.min(), dados.Renda.max()))
+``` 
+```
+A menor renda que temos é de 0 e a maior é 200_000 reais.
+```
