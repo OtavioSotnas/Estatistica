@@ -28,7 +28,7 @@ Exemplo: Salário, Preço, Temperatura.
 ```python
 tabela_cruzada = pd.crosstab(dados['Sexo'], dados['Cor'])
 ```
-```
+```markdown
 | Cor/Sexo | 0    | 2     | 4    | 6   | 8     |
 |----------|------|-------|------|-----|-------|
 | 0        | 256  | 22194 | 5502 | 235 | 25063 |
