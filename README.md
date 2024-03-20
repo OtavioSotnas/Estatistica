@@ -47,7 +47,7 @@ porcentagem_cruzada.rename(index=sexo, columns=cor, inplace=True)
 | Masculino | 0.33  | 28.88 | 7.16 | 0.31 | 32.62 |
 | Feminino | 0.13  | 12.52  | 3.76 | 0.15 | 14.14 |
 
-### 2.1 Para Variáveis Quantitativas
+### 2.1 Para Variáveis Quantitativas (classes personalizadas)
 
 - ``pandas.cut()``
 ```python
@@ -56,3 +56,24 @@ print('A menor renda que temos é de %s e a maior é %s reais.' % (dados.Renda.m
 ``` 
 A menor renda que temos é de 0 e a maior é 200_000 reais.
 
+```python
+# Depois criamos uma lista com as faixas de valores incluindo o min e o max
+# Neste caso são graus de renda por salário mínimo
+classes = [0, 1_576, 3_152, 7_880, 15_760, 200_000] 
+labels = ['E','D','C','B','A']
+```
+
+```python
+frequencia = pd.cut(x = dados.Renda, bins = intervalos, labels = labels, include_lowest = True).value_counts()
+percentual = pd.cut(x = dados.Renda, bins = intervalos, labels = labels, include_lowest = True).value_counts(normalize=True) * 100
+
+tabela_frequencia = pd.DataFrame({'Frequência' : frequencia, 'Porcentagem (%)' : round(percentual,2)})
+tabela_frequencia.sort_index(ascending=False, inplace=True)
+```
+| Renda | Frequência | Porcentagem (%) |
+|-------|------------|-----------------|
+| A     | 608        | 0.79            |
+| B     | 2178       | 2.83            |
+| C     | 7599       | 9.89            |
+| D     | 16700      | 21.73           |
+| E     | 49755      | 64.75           |
