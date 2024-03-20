@@ -26,6 +26,8 @@ Exemplo: Salário, Preço, Temperatura.
 
 ### 2.1 QUALITATIVAS
 
+<a href="https://pandas.pydata.org/pandas-docs/version/0.22/generated/pandas.crosstab.html" target="_blank">``pandas.crosstab()``</a>
+
 [``pandas.crosstab()``](https://pandas.pydata.org/pandas-docs/version/0.22/generated/pandas.crosstab.html){:target="_blank"}
 
 ```python
