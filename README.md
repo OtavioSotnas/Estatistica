@@ -53,7 +53,7 @@ porcentagem_cruzada.rename(index=sexo, columns=cor, inplace=True)
 
 ### 2.2 QUANTITATIVAS (classes personalizadas)
 
-``pandas.cut()``
+[``pandas.cut()``](https://pandas.pydata.org/pandas-docs/version/0.22/generated/pandas.cut.html)
 
 **Primeiro criamos uma lista com as faixas de valores incluindo o min e o max**
 ```python
