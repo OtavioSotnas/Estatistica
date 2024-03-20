@@ -2,7 +2,7 @@
 
 # Índice
 
-* [Tipos de Dados](## 1 TIPOS DE DADOS)
+* [Tipos de Dados](#1-TIPOS-DE-DADOS)
 
 
 ## 1 TIPOS DE DADOS
