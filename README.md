@@ -22,9 +22,9 @@ Exemplo: Salário, Preço, Temperatura.
 
 ---
 
-## 2 DISTRIBUIÇÃO DE FREQUÊNCIAS
+# 2 DISTRIBUIÇÃO DE FREQUÊNCIAS
 
-### 2.1 QUALITATIVAS
+## 2.1 QUALITATIVAS
 
 ``pandas.crosstab()``
 
@@ -51,7 +51,7 @@ porcentagem_cruzada.rename(index=sexo, columns=cor, inplace=True)
 
 <br>
 
-### 2.2 QUANTITATIVAS (classes personalizadas)
+## 2.2 QUANTITATIVAS (classes personalizadas)
 
 ``pandas.cut()``
 
@@ -88,3 +88,5 @@ tabela_frequencia.sort_index(ascending=False)
 | E     | 49755      | 64.75           |
 
 ---
+
+## 2.2 QUANTITATIVAS (classes de amplitude fixa)
