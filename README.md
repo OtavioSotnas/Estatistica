@@ -61,7 +61,7 @@ classes = [dados.Renda.min(), 1_576, 3_152, 7_880, 15_760, dados.Renda.max()]
 labels = ['E','D','C','B','A']
 ```
 
-**E depois fazemos a tabela de frequência normalmente**
+**Agora fazemos a tabela de frequência normalmente**
 ```python
 frequencia = pd.cut(x = dados.Renda, 
                     bins = classes, 
@@ -84,3 +84,6 @@ tabela_frequencia.sort_index(ascending=False)
 ---
 
 ### 2.2 QUANTITATIVAS (classes de amplitude fixa)
+``Regra de Sturges``
+# $$k = 1 + \frac {10}{3}\log_{10}n$$
+
