@@ -24,7 +24,7 @@ Exemplo: Salário, Preço, Temperatura.
 
 ## 2 DISTRIBUIÇÃO DE FREQUÊNCIAS
 
-### 2.1 Para Variáveis Qualitativas
+### 2.1 VARIÁVEIS QUALITATIVAS
 
 ``pandas.crosstab()``
 
@@ -53,7 +53,7 @@ porcentagem_cruzada.rename(index=sexo, columns=cor, inplace=True)
 
 <br>
 
-### 2.2 Para Variáveis Quantitativas (classes personalizadas)
+### 2.2 VARIÁVEIS QUANTITATIVAS (classes personalizadas)
 
 ``pandas.cut()``
 
