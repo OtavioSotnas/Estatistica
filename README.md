@@ -24,6 +24,7 @@ Exemplo: Salário, Preço, Temperatura.
 ### 2.1 Para Variáveis Qualitativas
 
 ``pandas.crosstab()``
+```
 ```python
 tabela_cruzada = pd.crosstab(dados['Sexo'], dados['Cor'])
 ```
@@ -32,6 +33,7 @@ tabela_cruzada = pd.crosstab(dados['Sexo'], dados['Cor'])
 | 0        | 256  | 22194 | 5502 | 235 | 25063 |
 | 1        | 101  | 9621  | 2889 | 117 | 10862 |
 <br>
+```
 
 Podemos renomear as colunas atráves de um dict e transformar em % com ``normalize=True``.
 ```python
