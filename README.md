@@ -20,6 +20,7 @@ Exemplo: Idade em anos inteiros, Número de filhos, Quantidade de vendas.
 Exemplo: Salário, Preço, Temperatura.
 ```
 <br>
+
 ---
 
 ## 2 DISTRIBUIÇÃO DE FREQUÊNCIAS
@@ -50,6 +51,7 @@ porcentagem_cruzada.rename(index=sexo, columns=cor, inplace=True)
 | Feminino  | 0.13     | 12.52   | 3.76 | 0.15    | 14.14 |
 
 <br>
+
 ---
 
 ### 2.2 QUANTITATIVAS (classes personalizadas)
@@ -81,7 +83,9 @@ tabela_frequencia.sort_index(ascending=False)
 | C     | 7599       | 9.89            |
 | D     | 16700      | 21.73           |
 | E     | 49755      | 64.75           |
+
 <br>
+
 ---
 
 ### 2.3 QUANTITATIVAS (classes de amplitude fixa)
