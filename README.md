@@ -1,4 +1,4 @@
-## <font color=green>1 CONHECENDO OS DADOS</font>
+## <font color=black>1 CONHECENDO OS DADOS</font>
 
 ``QUALITATIVA NOMINAIS`` - Atrivbutos sem nenhum tipo de ordem.
 ```
