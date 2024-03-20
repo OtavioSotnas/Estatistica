@@ -96,8 +96,8 @@ k = int(np.ceil(k)) # Devemos sempre arredondar o valor de k para cima
 ```
 **Agora podemos fazer a tabela normalmente
 ```python
-frequencia = pd.cut(x = dados.Renda, bins = k, include_lowest=True).value_counts(sort=False)
-percentual = pd.cut(x = dados.Renda, bins = k, include_lowest=True).value_counts(normalize=True) * 100
+frequencia = pd.cut(x = dados.Renda, bins = k).value_counts(sort=False)
+percentual = pd.cut(x = dados.Renda, bins = k).value_counts(normalize=True) * 100
 
 pd.DataFrame({'Frequencia': frequencia, 'Porcentagem (%)': round(percentual,2)})
 ```
