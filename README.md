@@ -32,8 +32,8 @@ tabela_cruzada = pd.crosstab(dados['Sexo'], dados['Cor'])
 |----------|------|-------|------|-----|-------|
 | 0        | 256  | 22194 | 5502 | 235 | 25063 |
 | 1        | 101  | 9621  | 2889 | 117 | 10862 |
----
 
+---
 
 Podemos renomear as colunas atráves de um dict e transformar em % com ``normalize=True``.
 ```python
@@ -42,12 +42,12 @@ sexo = {0:'Masculino', 1:'Feminino'}
 
 porcentagem_cruzada = round(pd.crosstab(dados['Sexo'], dados['Cor'], normalize=True) * 100, 2)
 porcentagem_cruzada.rename(index=sexo, columns=cor, inplace=True)
-
+```
 |  Cor/Sexo | Indígena | Branca | Preta | Amarela | Parda |
 |-----------|----------|---------|------|---------|-------|
 | Masculino | 0.33     | 28.88   | 7.16 | 0.31    | 32.62 |
 | Feminino  | 0.13     | 12.52   | 3.76 | 0.15    | 14.14 |
-```
+
 
 ### 2.2 Para Variáveis Quantitativas (classes personalizadas)
 
@@ -58,14 +58,12 @@ Primeiro devemos descobrir o mim e o max
 print('A menor renda é de %s e a maior é %s reais.' % (dados.Renda.min(), dados.Renda.max()))
 # A menor renda que temos é de 0 e a maior é 200_000 reais.
 ```
-<br>
 
 Depois criamos uma lista com as faixas de valores incluindo o min e o max
 ```python
 classes = [0, 1_576, 3_152, 7_880, 15_760, 200_000] 
 labels = ['E','D','C','B','A']
 ```
-<br>
 
 E agora fazemos a tabela de frequência normalmente
 ```python
@@ -86,3 +84,5 @@ tabela_frequencia.sort_index(ascending=False)
 | C     | 7599       | 9.89            |
 | D     | 16700      | 21.73           |
 | E     | 49755      | 64.75           |
+
+---
