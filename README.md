@@ -1,4 +1,5 @@
-## <font color=black>1 CONHECENDO OS DADOS</font>
+> ### UF
+> ***
 
 ``QUALITATIVA NOMINAIS`` - Atrivbutos sem nenhum tipo de ordem.
 ```
