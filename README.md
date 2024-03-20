@@ -2,7 +2,11 @@
 
 # Índice
 
-* [Tipos de Dados](#1-TIPOS-DE-DADOS)
+* [1 TIPOS DE DADOS](#1-TIPOS-DE-DADOS)
+* [2 DISTRIBUIÇÃO DE FREQUÊNCIAS](#2-DISTRIBUIÇÃO-DE-FREQUÊNCIAS)
+* [2.1 Para Variáveis Qualitativas2.1-Para-Variáveis-Qualitativas)
+* [2.2 Para Variáveis Quantitativas (classes personalizadas)](#2.2-Para-Variáveis-Quantitativas-(classes personalizadas))
+
 
 
 ## 1 TIPOS DE DADOS
@@ -52,7 +56,7 @@ porcentagem_cruzada.rename(index=sexo, columns=cor, inplace=True)
 | Masculino | 0.33  | 28.88 | 7.16 | 0.31 | 32.62 |
 | Feminino | 0.13  | 12.52  | 3.76 | 0.15 | 14.14 |
 
-### 2.1 Para Variáveis Quantitativas (classes personalizadas)
+### 2.2 Para Variáveis Quantitativas (classes personalizadas)
 
 - ``pandas.cut()``
 ```python
