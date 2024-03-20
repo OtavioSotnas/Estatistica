@@ -86,4 +86,40 @@ tabela_frequencia.sort_index(ascending=False)
 ### 2.2 QUANTITATIVAS (classes de amplitude fixa)
 ``Regra de Sturges``
 # $$k = 1 + \frac {10}{3}\log_{10}n$$
+**Caso não definirmos as faixas, podemos utilizar a fórmula de Sturges**
+```python
+import numpy as np
 
+n = dados.shape[0]
+k = 1 + 10/3 * np.log10(n)
+k = int(np.ceil(k)) # Devemos sempre arredondar o valor de k para cima
+```
+**Agora podemos fazer a tabela normalmente
+```python
+frequencia = pd.cut(x = dados.Renda, bins = k, include_lowest=True).value_counts(sort=False)
+percentual = pd.cut(x = dados.Renda, bins = k, include_lowest=True).value_counts(normalize=True) * 100
+
+pd.DataFrame({'Frequencia': frequencia, 'Porcentagem (%)': round(percentual,2)})
+```
+|       Renda       | Frequencia | Porcentagem (%) |
+|-------------------|------------|-----------------|
+| (-200.001, 11111.111] |   75583    |      98.36      |
+| (11111.111, 22222.222] |   1023     |       1.33      |
+| (22222.222, 33333.333] |    165     |       0.21      |
+| (33333.333, 44444.444] |    30      |       0.04      |
+| (44444.444, 55555.556] |    17      |       0.02      |
+| (55555.556, 66666.667] |     7      |       0.01      |
+| (66666.667, 77777.778] |     0      |       0.00      |
+| (77777.778, 88888.889] |     4      |       0.01      |
+| (88888.889, 100000.0]  |     7      |       0.01      |
+| (100000.0, 111111.111] |     0      |       0.00      |
+| (111111.111, 122222.222] |     1      |       0.00      |
+| (122222.222, 133333.333] |     0      |       0.00      |
+| (133333.333, 144444.444] |     0      |       0.00      |
+| (144444.444, 155555.556] |     0      |       0.00      |
+| (155555.556, 166666.667] |     0      |       0.00      |
+| (166666.667, 177777.778] |     0      |       0.00      |
+| (177777.778, 188888.889] |     0      |       0.00      |
+| (188888.889, 200000.0]  |     3      |       0.00      |
+
+Nota-se que essa distribuição esta estranha devido aos outliers
