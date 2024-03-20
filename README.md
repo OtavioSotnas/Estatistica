@@ -1,5 +1,10 @@
 # Estatistica
 
+# Índice
+
+* [Tipos de Dados](## 1 TIPOS DE DADOS)
+
+
 ## 1 TIPOS DE DADOS
 
 ``QUALITATIVA NOMINAIS`` - Atrivbutos sem nenhum tipo de ordem.
