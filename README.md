@@ -19,7 +19,6 @@ Exemplo: Idade em anos inteiros, Número de filhos, Quantidade de vendas.
 ```
 Exemplo: Salário, Preço, Temperatura.
 ```
-<br>
 
 ---
 
