@@ -71,7 +71,7 @@ frequencia = pd.cut(x = dados.Renda,
 
 percentual = 'copia do código acima'.value_counts(normalize=True) * 100
 
-tabela_frequencia = pd.DataFrame({'Frequência' : frequencia, 'Porcentagem (%)' : round(percentual,2)})
+tabela_frequencia = pd.DataFrame({'Frequência' : frequencia, 'Porcentagem (%)' : percentual})
 tabela_frequencia.sort_index(ascending=False, inplace=True)
 ```
 | Renda | Frequência | Porcentagem (%) |
