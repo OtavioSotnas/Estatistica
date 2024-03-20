@@ -41,7 +41,7 @@ tabela_cruzada = pd.crosstab(dados['Sexo'], dados['Cor'])
 cor = {0:'Indígena', 2:'Branca',4:'Preta',6:'Amarela',8:'Parda', 9:'Sem declaração'}
 sexo = {0:'Masculino', 1:'Feminino'}
 
-porcentagem_cruzada = round(pd.crosstab(dados['Sexo'], dados['Cor'], normalize=True) * 100, 2)
+porcentagem_cruzada = pd.crosstab(dados['Sexo'], dados['Cor'], normalize=True) * 100
 porcentagem_cruzada.rename(index=sexo, columns=cor, inplace=True)
 ```
 |  Cor/Sexo | Indígena | Branca | Preta | Amarela | Parda |
