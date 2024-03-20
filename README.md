@@ -1,4 +1,4 @@
-> # TIPOS DE DADOS
+> ## 1. TIPOS DE DADOS
 
 
 ``QUALITATIVA NOMINAIS`` - Atrivbutos sem nenhum tipo de ordem.
@@ -20,7 +20,7 @@ Exemplo: Idade em anos inteiros, Número de filhos, Quantidade de vendas.
 ```
 Exemplo: Salário, Preço, Temperatura.
 ```  
-## 2 DISTRIBUIÇÃO DE FREQUÊNCIAS
+> ## 2 DISTRIBUIÇÃO DE FREQUÊNCIAS
 
 ### 2.1 Para Variáveis Qualitativas
 
