@@ -52,8 +52,6 @@ porcentagem_cruzada.rename(index=sexo, columns=cor, inplace=True)
 
 <br>
 
----
-
 ### 2.2 QUANTITATIVAS (classes personalizadas)
 
 [``pandas.cut()``](https://pandas.pydata.org/pandas-docs/version/0.22/generated/pandas.cut.html)
@@ -85,8 +83,6 @@ tabela_frequencia.sort_index(ascending=False)
 | E     | 49755      | 64.75           |
 
 <br>
-
----
 
 ### 2.3 QUANTITATIVAS (classes de amplitude fixa)
 ``Regra de Sturges``
@@ -128,4 +124,5 @@ pd.DataFrame({'Frequencia': frequencia, 'Porcentagem (%)': round(percentual,2)})
 | (188888.889, 200000.0]  |     3      |       0.00      |
 
 Nota-se que essa distribuição esta estranha devido aos outliers
----
+
+<br>
