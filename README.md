@@ -4,7 +4,7 @@
 
 * [1 TIPOS DE DADOS](#1-TIPOS-DE-DADOS)
 * [2 DISTRIBUIÇÃO DE FREQUÊNCIAS](#2-DISTRIBUIÇÃO-DE-FREQUÊNCIAS)
-* [2.1 Para Variáveis Qualitativas(##2.1-Para-Variáveis-Qualitativas)
+* [2.1 Para Variáveis Qualitativas(#2-1-Para-Variáveis-Qualitativas)
 * [2.2 Para Variáveis Quantitativas (classes personalizadas)](#2.2-Para-Variáveis-Quantitativas-(classes personalizadas))
 
 
