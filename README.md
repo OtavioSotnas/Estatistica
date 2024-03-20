@@ -53,16 +53,16 @@ porcentagem_cruzada.rename(index=sexo, columns=cor, inplace=True)
 ```python
 # Primeiro devemos descobrir o mim e o max
 print('A menor renda é de %s e a maior é %s reais.' % (dados.Renda.min(), dados.Renda.max()))
-# A menor renda que temos é de 0 e a maior é 200_000 reais.
 ```
+A menor renda que temos é de 0 e a maior é 200_000 reais.
+
 
 ```python
 # Depois criamos uma lista com as faixas de valores incluindo o min e o max
 classes = [0, 1_576, 3_152, 7_880, 15_760, 200_000] 
 labels = ['E','D','C','B','A']
-```
 
-```python
+# E agora fazemos a tabela de frequência normalmente
 frequencia = pd.cut(x = dados.Renda, 
                     bins = classes, 
                     labels = labels, 
@@ -72,7 +72,7 @@ frequencia = pd.cut(x = dados.Renda,
 percentual = 'copia do código acima'.value_counts(normalize=True) * 100
 
 tabela_frequencia = pd.DataFrame({'Frequência' : frequencia, 'Porcentagem (%)' : percentual})
-tabela_frequencia.sort_index(ascending=False, inplace=True)
+tabela_frequencia.sort_index(ascending=False)
 ```
 | Renda | Frequência | Porcentagem (%) |
 |-------|------------|-----------------|
