@@ -99,7 +99,7 @@ n = dados.shape[0]
 k = 1 + 10/3 * np.log10(n)
 k = int(np.ceil(k)) # Devemos sempre arredondar o valor de k para cima
 ```
-**Agora podemos fazer a tabela normalmente
+**Agora podemos fazer a tabela normalmente**
 ```python
 frequencia = pd.cut(x = dados.Renda, bins = k).value_counts(sort=False)
 percentual = pd.cut(x = dados.Renda, bins = k).value_counts(normalize=True) * 100
