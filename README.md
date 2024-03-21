@@ -5,7 +5,7 @@
 Exemplo: Sexo, Estado civil, País de origem, Ser fumante ou não.
 ```
 
-``QUANTITATIVA ORDINAL`` - Atributos com algum tipo de ordem ou grau:
+``QUALITATIVA ORDINAL`` - Atributos com algum tipo de ordem ou grau:
 ```
 Exemplo: Escolaridade, Classe social, Status de pedido.
 ```
@@ -15,7 +15,7 @@ Exemplo: Escolaridade, Classe social, Status de pedido.
 Exemplo: Idade em anos inteiros, Número de filhos, Quantidade de vendas.
 ```
   
-``QUALITATIVA CONTÍNUA`` - Valores numéricos racionais.
+``QUANTITATIVA CONTÍNUA`` - Valores numéricos racionais.
 ```
 Exemplo: Salário, Preço, Temperatura.
 ```
