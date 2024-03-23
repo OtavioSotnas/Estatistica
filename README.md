@@ -132,7 +132,7 @@ Nota-se que essa distribuição esta estranha devido aos outliers
 
 ### 3.1 MÉDIA
 Seja $X$ uma variável quantitativa e $x_1,x_2,x_3, ...$ os valores assumidos por X. Define-se média de $\overline{X}$ como sendo :
-![image](https://github.com/OtavioSotnas/Estatistica/assets/142911747/0e3a4ca3-3782-4f74-868d-3aa85a5d375f)
+$$\overline{X} = \frac{\sum_{i=1}^{n}x_i}{n}= \frac{x_1+ x_2 + x_3 +... +x_n}{n}$$
 
 ### 3.2 MEDIANA
 
