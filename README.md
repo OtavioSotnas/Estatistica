@@ -134,6 +134,21 @@ Nota-se que essa distribuição esta estranha devido aos outliers
 Seja $X$ uma variável quantitativa e $x_1,x_2,x_3, ...$ os valores assumidos por X. Define-se média de $\overline{X}$ como sendo :
 ![image](https://github.com/OtavioSotnas/Estatistica/assets/142911747/a49b7378-0121-4475-9b33-0be2808c323c)
 
+| Matérias   | Fulano | Beltrano | Sicrano |
+|------------|--------|----------|---------|
+| Matemática | 8      | 10.0     | 7.5     |
+| Português  | 10     | 2.0      | 8.0     |
+| Inglês     | 4      | 0.5      | 7.0     |
+| Geografia  | 8      | 1.0      | 8.0     |
+| História   | 6      | 3.0      | 8.0     |
+| Física     | 10     | 9.5      | 8.5     |
+| Química    | 8      | 10.0     | 7.0     |
+
+```python
+(8 + 10 + 4 + 8 + 6 + 10 + 8) / 7
+# OU
+df['Fulano'].mean()
+```
 
 ### 3.2 MEDIANA
 
