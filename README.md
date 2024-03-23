@@ -146,7 +146,9 @@ Seja $X$ uma variável quantitativa e $x_1,x_2,x_3, ...$ os valores assumidos po
 
 ```python
 (8 + 10 + 4 + 8 + 6 + 10 + 8) / 7
+
 # OU
+
 df['Fulano'].mean()
 ```
 
