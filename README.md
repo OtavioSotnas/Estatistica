@@ -127,3 +127,15 @@ pd.DataFrame({'Frequencia': frequencia, 'Porcentagem (%)': round(percentual,2)})
 Nota-se que essa distribuição esta estranha devido aos outliers
 
 <br>
+
+## 3 MEDIDAS DE TENDÊNCIA CENTRAL
+
+### 3.1 MÉDIA
+Seja $X$ uma variável quantitativa e $x_1,x_2,x_3, ...$ os valores assumidos por X. Define-se média de $\overline{X}$ como sendo :
+![image](https://github.com/OtavioSotnas/Estatistica/assets/142911747/0e3a4ca3-3782-4f74-868d-3aa85a5d375f)
+
+### 3.2 MEDIANA
+
+### 3.3 MODA
+
+### 3.4 RELAÇÕES ENTRE MEDIDAS
