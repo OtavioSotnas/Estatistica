@@ -155,14 +155,10 @@ df['Fulano'].mean()
 ### 3.2 MEDIANA
 
 > Quando $n$ for ímpar:
-
-
-# $$Md = X_{Elemento_{Md}}$$     $$Md = \frac{X_{Elemento_{Md}} + X_{Elemento_{Md}+1}}2$$
+# $$Md = X_{Elemento_{Md}}$$
 
 > Quando $n$ for par:
-
-
-# 
+# $$Md = \frac{X_{Elemento_{Md}} + X_{Elemento_{Md}+1}}2$$
 
 ### 3.3 MODA
 
