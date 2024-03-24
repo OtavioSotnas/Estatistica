@@ -161,6 +161,20 @@ Quando $n$ for par:
 
 ![image](https://github.com/OtavioSotnas/Estatistica/assets/142911747/b4478557-d4cc-446a-a35f-8068202863d1)
 
+```python
+# Primeiro precisamos ordernar os valores
+notas_fulano = df.Fulano.sort_values()
+
+# Depois encontar N e o Elemento Mediano
+n = notas_fulano.shape[0]
+elemento_md = (n + 1) / 2
+
+notas_fulano.loc[elemento_md -1]
+
+# OU
+
+notas_fulano.median()
+```
 
 ### 3.3 MODA
 
