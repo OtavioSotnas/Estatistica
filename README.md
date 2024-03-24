@@ -153,13 +153,11 @@ df['Fulano'].mean()
 ```
 
 ### 3.2 MEDIANA
-
-> Quando $n$ for ímpar:
+Quando $n$ for ímpar:
 
 ![image](https://github.com/OtavioSotnas/Estatistica/assets/142911747/795ae277-8ac1-44b6-9e0a-d8a319816ba0)
 
-
-> Quando $n$ for par:
+Quando $n$ for par:
 
 ![image](https://github.com/OtavioSotnas/Estatistica/assets/142911747/b4478557-d4cc-446a-a35f-8068202863d1)
 
