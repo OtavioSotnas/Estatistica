@@ -227,3 +227,7 @@ ax.figure.set_size_inches(8, 4)
 mode > median > mean # True
 ```
 ![image](https://github.com/OtavioSotnas/Estatistica/assets/142911747/ca99df71-65a3-4a26-b840-142f6e730eb1)
+
+## 4 MEDIDAS SEPARATRIZES 
+
+### 
