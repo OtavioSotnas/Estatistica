@@ -1,4 +1,4 @@
-# SUMÁRIO
+## SUMÁRIO
 - [1. Tipos de Dados](#1-tipos-de-dados)
   - [1.1 Qualitativa Nominais](#11-qualitativa-nominais)
   - [1.2 Qualitativa Ordinal](#12-qualitativa-ordinal)
@@ -20,6 +20,8 @@
   - [4.1 Quartis, Decis e Percentis](#41-quartis-decis-e-percentis)
   - [4.2 Boxplot](#42-boxplot)
 
+<br>
+<br>
 
 ## 1. TIPOS DE DADOS
 
