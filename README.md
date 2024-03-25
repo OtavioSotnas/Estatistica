@@ -234,13 +234,12 @@ mode > median > mean # True
 
 [``DataFrame.quantile()``](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.quantile.html)
 
-O padrão é q = 0.5 que retorna a Mediana
 ```python
-dados.Renda.quantile(q = 0.5)
+dados.Renda.quantile() # Padrão q = 0.5
 # 1.200
 ```
 
-**Calculando os QUARTIS por uma lista**
+**QUARTIS permitem dividir a distribuição em quatro partes iguais quanto ao número de elemento**
 ```python
 dados.Renda.quantile([0.25, 0.5, 0.75])
 # 0.25     788.0
@@ -248,7 +247,7 @@ dados.Renda.quantile([0.25, 0.5, 0.75])
 # 0.75    2000.0
 ```
 
-**Calculando os DECIS por List Comprehension**
+**DECIS em dez partes iguais**
 ```python
 dados.Renda.quantile([i / 10 for i in range(1, 10)])
 # 0.1     350.0
@@ -259,7 +258,7 @@ dados.Renda.quantile([i / 10 for i in range(1, 10)])
 # ...  
 ```
 
-**Calculando os PERCENTIS por List Comprehension**
+**PERCENTIS em cem partes iguais**
 ```python
 dados.Renda.quantile([i / 100 for i in range(1, 100)])
 # 0.01        0.0
