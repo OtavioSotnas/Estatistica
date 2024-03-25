@@ -195,3 +195,5 @@ notas.mode()
 ```
 
 ### 3.4 RELAÇÕES ENTRE MEDIDAS
+
+<img src='https://caelum-online-public.s3.amazonaws.com/1177-estatistica-parte1/01/img004.png' width='80%'>
