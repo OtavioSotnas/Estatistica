@@ -297,6 +297,5 @@ ax.set_xlabel('R$', fontsize=14)
 
 **Com a imagem abaixo podemos perceber como as medidas se comportam em suas diferentes Assimetrias:**
 
-<img src='https://caelum-online-public.s3.amazonaws.com/1177-estatistica-parte1/01/img006.png' width='80%'>
-
+<img src='https://github.com/OtavioSotnas/Estatistica/assets/142911747/3f69614c-2f0d-4299-abf3-2b293c07e413' width='80%'>
 
