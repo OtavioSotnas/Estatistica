@@ -198,3 +198,24 @@ notas.mode()
 
 ![img004](https://github.com/OtavioSotnas/Estatistica/assets/142911747/eb2bb349-1148-4785-8153-7b453f4d4637)
 
+- Assimetria à Direita
+  
+```python
+ax = sns.distplot(dados.query('Renda < 10000').Renda)
+ax.figure.set_size_inches(8, 4)
+
+mode < median < mean # True
+```
+![image](https://github.com/OtavioSotnas/Estatistica/assets/142911747/a6d6e136-e1d8-4d6a-af5d-6de6547587eb)
+
+- Simétrica
+  
+```python
+  
+```
+
+- Assimetria à Esquerda
+
+```python
+  
+```
