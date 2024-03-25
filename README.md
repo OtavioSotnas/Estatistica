@@ -146,36 +146,47 @@ Seja $X$ uma variável quantitativa e $x_1,x_2,x_3, ...$ os valores assumidos po
 
 ```python
 (8 + 10 + 4 + 8 + 6 + 10 + 8) / 7
+```
 
-# OU
+OU
 
-df['Fulano'].mean()
+```python
+notas['Fulano'].mean()
 ```
 
 ### 3.2 MEDIANA
 Quando $n$ for ímpar:
 
 ![image](https://github.com/OtavioSotnas/Estatistica/assets/142911747/795ae277-8ac1-44b6-9e0a-d8a319816ba0)
+```python
+# Primeiro precisamos ordernar os valores
+notas = notas.Fulano.sort_values()
+
+# Depois encontar N e o Elemento Mediano
+n = notas.shape[0]
+elemento_md = (n + 1) / 2
+mediana = notas[elemento_md - 1]
+```
 
 Quando $n$ for par:
 
 ![image](https://github.com/OtavioSotnas/Estatistica/assets/142911747/b4478557-d4cc-446a-a35f-8068202863d1)
 
 ```python
-# Primeiro precisamos ordernar os valores
-notas_fulano = df.Fulano.sort_values()
+# O comando SAMPLE uma amostra de 6 elementos
+notas_beltrano = df.Beltrano.sample(6, random_state = 101)
+notas_beltrano = notas_beltrano.sort_values()
 
-# Depois encontar N e o Elemento Mediano
-n = notas_fulano.shape[0]
-elemento_md = (n + 1) / 2
-
-notas_fulano.loc[elemento_md -1]
-
-# OU
-
-notas_fulano.median()
+n = notas_beltrano.shape[0]
+elemento_md = n / 2
+mediana = (notas.Beltrano.loc[elemento_md - 1] + notas.Beltrano.loc[elemento_md]) / 2
 ```
 
+Ou
+
+```python
+notas.median()
+```
 ### 3.3 MODA
 
 ### 3.4 RELAÇÕES ENTRE MEDIDAS
