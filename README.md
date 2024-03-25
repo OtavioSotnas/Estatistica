@@ -274,7 +274,6 @@ dados.Renda.quantile([i / 100 for i in range(1, 100)])
 ### 4.2 BOXPLOT
 
 **O box plot dá uma idéia da posição, dispersão, assimetria, caudas e dados discrepantes (outliers)**
-<img src='(https://github.com/OtavioSotnas/Estatistica/assets/142911747/c3977986-ebe2-402b-aacc-02c84f945692' width='60%'>
 
 ```python
 ax = sns.boxplot( x = 'Renda', data = dados.query('Renda < 10000'), orient = 'h')
