@@ -1,11 +1,22 @@
 ## Sumário
 
 - [1. Tipos de Dados](#1-tipos-de-dados)
-
+  - [1.1 Qualitativa Nominais](#11-qualitativa-nominais)
+  - [1.2 Qualitativa Ordinal](#12-qualitativa-ordinal)
+  - [1.3 Quantitativa Discreta](#13-quantitativa-discreta)
+  - [1.4 Quantitativa Contínua](#14-quantitativa-contínua)
 - [2. Distribuição de Frequências](#2-distribuição-de-frequências)
-
-
-
+  - [2.1 Qualitativas (Tabela Cruzada)](#21-qualitativas-tabela-cruzada)
+  - [2.2 Quantitativas (Classes Personalizadas)](#22-quantitativas-classes-personalizadas)
+  - [2.3 Quantitativas (Classes de Amplitude Fixa)](#23-quantitativas-classes-de-amplitude-fixa)
+- [3. Medidas de Tendência Central](#3-medidas-de-tendência-central)
+  - [3.1 Média](#31-média)
+  - [3.2 Mediana](#32-mediana)
+  - [3.3 Moda](#33-moda)
+  - [3.4 Relações Entre Medidas](#34-relações-entre-medidas)
+- [4. Medidas Separatrizes](#4-medidas-separatrizes)
+  - [4.1 Quartis, Decis e Percentis](#41-quartis-decis-e-percentis)
+  - [4.2 Boxplot](#42-boxplot)
 
 
 ## 1. TIPOS DE DADOS
