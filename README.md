@@ -230,4 +230,40 @@ mode > median > mean # True
 
 ## 4 MEDIDAS SEPARATRIZES 
 
-### 
+### QUARTIS, DECIS E PERCENTIS
+
+[``DataFrame.quantile()``](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.quantile.html)
+
+O padrão é q = 0.5 que retorna a Mediana
+```python
+dados.Renda.quantile(q = 0.5)
+# 1.200
+```
+
+Podemos passar uma lista de valores para 'q'
+```python
+dados.Renda.quantile([0.25, 0.5, 0.75])
+# 0.25     788.0
+# 0.50    1200.0
+# 0.75    2000.0
+```
+
+Podemos calcular os Decis e os Percentis por List Comprehension
+```python
+dados.Renda.quantile([i / 10 for i in range(1, 10
+# 0.1     350.0
+# 0.2     788.0
+# 0.3     800.0
+# 0.4    1000.0
+# 0.5    1200.0
+# ...  
+```
+```python
+dados.Renda.quantile([i / 100 for i in range(1, 100)])
+# 0.01        0.0
+# 0.02        0.0
+# 0.03        0.0
+# 0.04       50.0
+# 0.05      100.0
+# ...   
+```
