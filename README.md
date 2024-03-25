@@ -1,4 +1,4 @@
-## 1. TIPOS DE DADOS
+![image](https://github.com/OtavioSotnas/Estatistica/assets/142911747/9c88fe3b-3465-4961-9cd2-1310d10cb4db)## 1. TIPOS DE DADOS
 
 ``QUALITATIVA NOMINAIS`` - Atributos sem nenhum tipo de ordem.
 ```
@@ -198,7 +198,7 @@ notas.mode()
 
 ![img004](https://github.com/OtavioSotnas/Estatistica/assets/142911747/eb2bb349-1148-4785-8153-7b453f4d4637)
 
-- Assimetria à Direita
+``Assimetria à Direita``
   
 ```python
 ax = sns.distplot(dados.query('Renda < 10000').Renda)
@@ -208,14 +208,22 @@ mode < median < mean # True
 ```
 ![image](https://github.com/OtavioSotnas/Estatistica/assets/142911747/a6d6e136-e1d8-4d6a-af5d-6de6547587eb)
 
-- Simétrica
+``Simétrica``
   
 ```python
-  
-```
+ax = sns.distplot(dados.Altura)
+ax.figure.set_size_inches(8, 4)
 
-- Assimetria à Esquerda
+mode = median = mean # True
+```
+![image](https://github.com/OtavioSotnas/Estatistica/assets/142911747/8c6f0e93-b1d1-4616-b137-f58cdcd27695)
+
+``Assimetria à Esquerda``
 
 ```python
-  
+ax = sns.distplot(dados[dados['Anos de Estudo'] <= 13]['Anos de Estudo'], bins = 17)
+ax.figure.set_size_inches(8, 4)
+
+mode > median > mean # True
 ```
+![image](https://github.com/OtavioSotnas/Estatistica/assets/142911747/ca99df71-65a3-4a26-b840-142f6e730eb1)
