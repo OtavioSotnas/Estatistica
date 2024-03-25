@@ -23,7 +23,6 @@
 ---
 
 <br>
-<br>
 
 ## 1. TIPOS DE DADOS
 
