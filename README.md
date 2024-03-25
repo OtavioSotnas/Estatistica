@@ -1,4 +1,4 @@
-> [!Sumário]
+> [!NOTE] Sumário
 >
 >- [1. Tipos de Dados](#1-tipos-de-dados)
 >  - [1.1 Qualitativa Nominais](#11-qualitativa-nominais)
