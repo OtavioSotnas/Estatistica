@@ -188,5 +188,10 @@ Ou
 notas.median()
 ```
 ### 3.3 MODA
+Pode-se definir a moda como sendo o valor mais frequente de um conjunto de dados. A moda é bastante utilizada para dados qualitativos.
+
+```python
+notas.mode()
+```
 
 ### 3.4 RELAÇÕES ENTRE MEDIDAS
