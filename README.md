@@ -19,6 +19,8 @@
 - [4. Medidas Separatrizes](#4-medidas-separatrizes)
   - [4.1 Quartis, Decis e Percentis](#41-quartis-decis-e-percentis)
   - [4.2 Boxplot](#42-boxplot)
+    
+---
 
 <br>
 <br>
