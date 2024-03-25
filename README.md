@@ -240,7 +240,7 @@ dados.Renda.quantile(q = 0.5)
 # 1.200
 ```
 
-Podemos passar uma lista de valores para 'q'
+**Calculando os QUARTIS por uma lista**
 ```python
 dados.Renda.quantile([0.25, 0.5, 0.75])
 # 0.25     788.0
@@ -248,9 +248,9 @@ dados.Renda.quantile([0.25, 0.5, 0.75])
 # 0.75    2000.0
 ```
 
-Podemos calcular os Decis e os Percentis por List Comprehension
+**Calculando os DECIS por List Comprehension**
 ```python
-dados.Renda.quantile([i / 10 for i in range(1, 10
+dados.Renda.quantile([i / 10 for i in range(1, 10)])
 # 0.1     350.0
 # 0.2     788.0
 # 0.3     800.0
@@ -258,6 +258,8 @@ dados.Renda.quantile([i / 10 for i in range(1, 10
 # 0.5    1200.0
 # ...  
 ```
+
+**Calculando os PERCENTIS por List Comprehension**
 ```python
 dados.Renda.quantile([i / 100 for i in range(1, 100)])
 # 0.01        0.0
