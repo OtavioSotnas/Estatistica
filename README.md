@@ -1,4 +1,4 @@
-![image](https://github.com/OtavioSotnas/Estatistica/assets/142911747/9c88fe3b-3465-4961-9cd2-1310d10cb4db)## 1. TIPOS DE DADOS
+## 1. TIPOS DE DADOS
 
 ``QUALITATIVA NOMINAIS`` - Atributos sem nenhum tipo de ordem.
 ```
