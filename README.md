@@ -1,3 +1,13 @@
+## Sumário
+
+- [1. Tipos de Dados](#1-tipos-de-dados)
+
+- [2. Distribuição de Frequências](#2-distribuição-de-frequências)
+
+
+
+
+
 ## 1. TIPOS DE DADOS
 
 ``QUALITATIVA NOMINAIS`` - Atributos sem nenhum tipo de ordem.
