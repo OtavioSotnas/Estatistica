@@ -228,9 +228,11 @@ mode > median > mean # True
 ```
 ![image](https://github.com/OtavioSotnas/Estatistica/assets/142911747/ca99df71-65a3-4a26-b840-142f6e730eb1)
 
+<br>
+
 ## 4 MEDIDAS SEPARATRIZES 
 
-### QUARTIS, DECIS E PERCENTIS
+### 4.1 QUARTIS, DECIS E PERCENTIS
 
 [``DataFrame.quantile()``](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.quantile.html)
 
@@ -268,3 +270,33 @@ dados.Renda.quantile([i / 100 for i in range(1, 100)])
 # 0.05      100.0
 # ...   
 ```
+
+### 4.2 BOXPLOT
+
+**O box plot dá uma idéia da posição, dispersão, assimetria, caudas e dados discrepantes (outliers)**
+![img005](https://github.com/OtavioSotnas/Estatistica/assets/142911747/c3977986-ebe2-402b-aacc-02c84f945692)
+
+```python
+ax = sns.boxplot( x = 'Renda', data = dados.query('Renda < 10000'), orient = 'h')
+ax.figure.set_size_inches(12, 4)
+ax.set_title('Renda', fontsize=18)
+ax.set_xlabel('R$', fontsize=14)
+```
+**Percebemos que a variável 'Renda' possui muitos outliers a direita causando uma Assimetria á Direita:**
+
+![image](https://github.com/OtavioSotnas/Estatistica/assets/142911747/30b491c0-ad5f-4887-8255-9c8bd30cb115)
+
+**Podemos atribuir um y ao nosso boxplot e comparar a variável 'Renda' com o 'Sexo'.**
+```python
+ax = sns.boxplot( x = 'Renda', y = 'Sexo', data = dados.query('Renda < 10000'), orient = 'h')
+ax.figure.set_size_inches(8, 2)
+ax.set_title('Renda', fontsize=18)
+ax.set_xlabel('R$', fontsize=14)
+```
+![image](https://github.com/OtavioSotnas/Estatistica/assets/142911747/5b78c799-842a-4069-af0d-1f3ee7c9f9f8)
+
+**Com a imagem abaixo podemos perceber como as medidas se comportam em suas diferentes Assimetrias:**
+
+![img006](https://github.com/OtavioSotnas/Estatistica/assets/142911747/1862efe2-7864-41d9-84c3-db9e6a034039)
+
+
