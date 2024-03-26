@@ -1,3 +1,29 @@
+## SUMÁRIO
+- [1. Tipos de Dados](#1-tipos-de-dados)
+  - [1.1 Qualitativa Nominais](#11-qualitativa-nominais)
+  - [1.2 Qualitativa Ordinal](#12-qualitativa-ordinal)
+  - [1.3 Quantitativa Discreta](#13-quantitativa-discreta)
+  - [1.4 Quantitativa Contínua](#14-quantitativa-contínua)
+    
+- [2. Distribuição de Frequências](#2-distribuição-de-frequências)
+  - [2.1 Qualitativas (Tabela Cruzada)](#21-qualitativas-tabela-cruzada)
+  - [2.2 Quantitativas (Classes Personalizadas)](#22-quantitativas-classes-personalizadas)
+  - [2.3 Quantitativas (Classes de Amplitude Fixa)](#23-quantitativas-classes-de-amplitude-fixa)
+    
+- [3. Medidas de Tendência Central](#3-medidas-de-tendência-central)
+  - [3.1 Média](#31-média)
+  - [3.2 Mediana](#32-mediana)
+  - [3.3 Moda](#33-moda)
+  - [3.4 Relações Entre Medidas](#34-relações-entre-medidas)
+    
+- [4. Medidas Separatrizes](#4-medidas-separatrizes)
+  - [4.1 Quartis, Decis e Percentis](#41-quartis-decis-e-percentis)
+  - [4.2 Boxplot](#42-boxplot)
+    
+---
+
+<br>
+
 ## 1. TIPOS DE DADOS
 
 ``QUALITATIVA NOMINAIS`` - Atributos sem nenhum tipo de ordem.
@@ -127,3 +153,174 @@ pd.DataFrame({'Frequencia': frequencia, 'Porcentagem (%)': round(percentual,2)})
 Nota-se que essa distribuição esta estranha devido aos outliers
 
 <br>
+
+## 3 MEDIDAS DE TENDÊNCIA CENTRAL
+
+| Matérias   | Fulano | Beltrano | Sicrano |
+|------------|--------|----------|---------|
+| Matemática | 8      | 10.0     | 7.5     |
+| Português  | 10     | 2.0      | 8.0     |
+| Inglês     | 4      | 0.5      | 7.0     |
+| Geografia  | 8      | 1.0      | 8.0     |
+| História   | 6      | 3.0      | 8.0     |
+| Física     | 10     | 9.5      | 8.5     |
+| Química    | 8      | 10.0     | 7.0     |
+
+### 3.1 MÉDIA
+Seja $X$ uma variável quantitativa e $x_1,x_2,x_3, ...$ os valores assumidos por X. Define-se média de $\overline{X}$ como sendo :
+![image](https://github.com/OtavioSotnas/Estatistica/assets/142911747/a49b7378-0121-4475-9b33-0be2808c323c)
+
+```python
+(8 + 10 + 4 + 8 + 6 + 10 + 8) / 7
+```
+
+OU
+
+```python
+notas['Fulano'].mean()
+```
+
+### 3.2 MEDIANA
+Quando $n$ for ímpar:
+
+![image](https://github.com/OtavioSotnas/Estatistica/assets/142911747/795ae277-8ac1-44b6-9e0a-d8a319816ba0)
+```python
+# Primeiro precisamos ordernar os valores
+notas = notas.Fulano.sort_values()
+
+# Depois encontar N e o Elemento Mediano
+n = notas.shape[0]
+elemento_md = (n + 1) / 2
+mediana = notas[elemento_md - 1]
+```
+
+Quando $n$ for par:
+
+![image](https://github.com/OtavioSotnas/Estatistica/assets/142911747/b4478557-d4cc-446a-a35f-8068202863d1)
+
+```python
+# O comando SAMPLE uma amostra de 6 elementos
+notas_beltrano = df.Beltrano.sample(6, random_state = 101)
+notas_beltrano = notas_beltrano.sort_values()
+
+n = notas_beltrano.shape[0]
+elemento_md = n / 2
+mediana = (notas.Beltrano.loc[elemento_md - 1] + notas.Beltrano.loc[elemento_md]) / 2
+```
+
+Ou
+
+```python
+notas.median()
+```
+### 3.3 MODA
+Pode-se definir a moda como sendo o valor mais frequente de um conjunto de dados. A moda é bastante utilizada para dados qualitativos.
+
+```python
+notas.mode()
+```
+
+### 3.4 RELAÇÕES ENTRE MEDIDAS
+
+![img004](https://github.com/OtavioSotnas/Estatistica/assets/142911747/eb2bb349-1148-4785-8153-7b453f4d4637)
+
+``Assimetria à Direita``
+  
+```python
+ax = sns.distplot(dados.query('Renda < 10000').Renda)
+ax.figure.set_size_inches(8, 4)
+
+mode < median < mean # True
+```
+![image](https://github.com/OtavioSotnas/Estatistica/assets/142911747/a6d6e136-e1d8-4d6a-af5d-6de6547587eb)
+
+``Simétrica``
+  
+```python
+ax = sns.distplot(dados.Altura)
+ax.figure.set_size_inches(8, 4)
+
+mode = median = mean # True
+```
+![image](https://github.com/OtavioSotnas/Estatistica/assets/142911747/8c6f0e93-b1d1-4616-b137-f58cdcd27695)
+
+``Assimetria à Esquerda``
+
+```python
+ax = sns.distplot(dados[dados['Anos de Estudo'] <= 13]['Anos de Estudo'], bins = 17)
+ax.figure.set_size_inches(8, 4)
+
+mode > median > mean # True
+```
+![image](https://github.com/OtavioSotnas/Estatistica/assets/142911747/ca99df71-65a3-4a26-b840-142f6e730eb1)
+
+<br>
+
+## 4 MEDIDAS SEPARATRIZES 
+
+### 4.1 QUARTIS, DECIS E PERCENTIS
+
+[``DataFrame.quantile()``](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.quantile.html)
+
+```python
+dados.Renda.quantile() # Padrão q = 0.5
+# 1.200
+```
+
+**QUARTIS permitem dividir a distribuição em quatro partes iguais quanto ao número de elemento**
+```python
+dados.Renda.quantile([0.25, 0.5, 0.75])
+# 0.25     788.0
+# 0.50    1200.0
+# 0.75    2000.0
+```
+
+**DECIS em dez partes iguais**
+```python
+dados.Renda.quantile([i / 10 for i in range(1, 10)])
+# 0.1     350.0
+# 0.2     788.0
+# 0.3     800.0
+# 0.4    1000.0
+# 0.5    1200.0
+# ...  
+```
+
+**PERCENTIS em cem partes iguais**
+```python
+dados.Renda.quantile([i / 100 for i in range(1, 100)])
+# 0.01        0.0
+# 0.02        0.0
+# 0.03        0.0
+# 0.04       50.0
+# 0.05      100.0
+# ...   
+```
+
+### 4.2 BOXPLOT
+
+**O box plot dá uma idéia da posição, dispersão, assimetria, caudas e dados discrepantes (outliers)**
+
+```python
+ax = sns.boxplot( x = 'Renda', data = dados.query('Renda < 10000'), orient = 'h')
+ax.figure.set_size_inches(12, 4)
+ax.set_title('Renda', fontsize=18)
+ax.set_xlabel('R$', fontsize=14)
+```
+**Percebemos que a variável 'Renda' possui muitos outliers a direita causando uma Assimetria á Direita:**
+
+![image](https://github.com/OtavioSotnas/Estatistica/assets/142911747/30b491c0-ad5f-4887-8255-9c8bd30cb115)
+
+**Podemos atribuir um y ao nosso boxplot e comparar a variável 'Renda' com o 'Sexo'.**
+```python
+ax = sns.boxplot( x = 'Renda', y = 'Sexo', data = dados.query('Renda < 10000'), orient = 'h')
+ax.figure.set_size_inches(8, 2)
+ax.set_title('Renda', fontsize=18)
+ax.set_xlabel('R$', fontsize=14)
+```
+![image](https://github.com/OtavioSotnas/Estatistica/assets/142911747/5b78c799-842a-4069-af0d-1f3ee7c9f9f8)
+
+**Com a imagem abaixo podemos perceber como as medidas se comportam em suas diferentes Assimetrias:**
+
+<img src='https://github.com/OtavioSotnas/Estatistica/assets/142911747/3f69614c-2f0d-4299-abf3-2b293c07e413' width='80%'>
+
